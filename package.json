@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@evanpurkhiser/oxlint-config",
+  "version": "0.1.0",
+  "description": "Evan Purkhiser's personal oxlint configuration",
+  "license": "MIT",
+  "author": "Evan Purkhiser",
+  "repository": "https://github.com/evanpurkhiser/oxlint-config",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./common": "./src/common.mjs",
+    "./react": "./src/react.mjs"
+  },
+  "scripts": {
+    "lint": "oxlint src oxlint.config.ts profiles/all/oxlint.config.ts",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "check": "npm run lint && npm run format:check"
+  },
+  "dependencies": {
+    "eslint-plugin-simple-import-sort": "^12.1.1"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "oxlint": ">=1.56.0"
+  },
+  "volta": {
+    "node": "24.3.0"
+  }
+}
