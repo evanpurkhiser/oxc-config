@@ -1,17 +1,18 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@evanpurkhiser/oxlint-config",
+  "name": "@evanpurkhiser/oxc-config",
   "version": "0.2.0",
-  "description": "Evan Purkhiser's personal oxlint configuration",
+  "description": "Evan Purkhiser's personal Oxc configuration",
   "license": "MIT",
   "author": "Evan Purkhiser",
-  "repository": "https://github.com/evanpurkhiser/oxlint-config",
+  "repository": "https://github.com/evanpurkhiser/oxc-config",
   "type": "module",
   "main": "src/index.mjs",
   "exports": {
     ".": "./src/index.mjs",
     "./common": "./src/common.mjs",
-    "./react": "./src/react.mjs"
+    "./react": "./src/react.mjs",
+    "./oxfmt": "./src/oxfmt.mjs"
   },
   "scripts": {
     "lint": "oxlint src oxlint.config.ts profiles/all/oxlint.config.ts",
