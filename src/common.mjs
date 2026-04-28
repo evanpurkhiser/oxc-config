@@ -8,10 +8,8 @@ const common = {
     'no-caller': ['warn'],
     'no-else-return': ['error', {allowElseIf: false}],
     'no-extra-label': ['error'],
-    'no-floating-decimal': ['error'],
     'no-implied-eval': ['error'],
     'no-lone-blocks': ['error'],
-    'no-return-await': ['error'],
     'no-self-compare': ['error'],
     'no-sequences': ['error'],
     'no-useless-call': ['warn'],
@@ -22,18 +20,8 @@ const common = {
     eqeqeq: ['error'],
     radix: ['warn'],
 
-    // Variables
-    'no-undef-init': ['warn'],
-
-    // Style (mostly handled by prettier/oxfmt)
-    'eol-last': ['error', 'always'],
-    'new-parens': ['error'],
-    'padded-blocks': ['warn', 'never'],
-    'spaced-comment': ['warn', 'always'],
-
     // ECMAScript
     'no-var': ['error'],
-    'prefer-arrow-callback': ['warn'],
     'prefer-const': ['error'],
     'prefer-destructuring': ['off'],
     'prefer-numeric-literals': ['warn'],
