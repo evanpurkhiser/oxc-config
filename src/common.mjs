@@ -1,5 +1,5 @@
 const common = {
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'import', 'react'],
+  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'import', 'react', 'promise', 'node'],
 
   rules: {
     // Best practices
@@ -35,6 +35,9 @@ const common = {
     'no-throw-literal': ['error'],
     'default-case-last': ['error'],
     'prefer-promise-reject-errors': ['error'],
+    'no-extend-native': ['error'],
+    'preserve-caught-error': ['error'],
+    'no-implicit-coercion': ['warn'],
 
     // Style cleanup
     'object-shorthand': ['warn'],
@@ -59,16 +62,48 @@ const common = {
     'typescript/consistent-type-imports': ['error'],
     'typescript/no-import-type-side-effects': ['error'],
     'typescript/no-non-null-asserted-optional-chain': ['error'],
+    'typescript/no-non-null-asserted-nullish-coalescing': ['error'],
     'typescript/prefer-as-const': ['error'],
+    'typescript/ban-ts-comment': ['warn'],
+    'typescript/prefer-ts-expect-error': ['error'],
+    'typescript/prefer-enum-initializers': ['error'],
+    'typescript/prefer-literal-enum-member': ['error'],
+    'typescript/no-mixed-enums': ['error'],
+    'typescript/no-inferrable-types': ['warn'],
+    'typescript/consistent-generic-constructors': ['warn'],
 
     // Imports
     'import/no-duplicates': ['error'],
     'import/no-self-import': ['error'],
+    'import/no-empty-named-blocks': ['error'],
+    'import/no-named-as-default': ['warn'],
+    'import/no-named-as-default-member': ['warn'],
+    'import/first': ['warn'],
 
     // Unicorn
     'unicorn/prefer-node-protocol': ['error'],
     'unicorn/prefer-string-slice': ['warn'],
     'unicorn/no-useless-undefined': ['warn'],
+    'unicorn/prefer-array-flat-map': ['warn'],
+    'unicorn/prefer-date-now': ['warn'],
+    'unicorn/prefer-regexp-test': ['warn'],
+    'unicorn/prefer-math-min-max': ['warn'],
+    'unicorn/prefer-string-replace-all': ['warn'],
+    'unicorn/prefer-number-properties': ['warn'],
+    'unicorn/no-instanceof-array': ['warn'],
+    'unicorn/no-typeof-undefined': ['warn'],
+    'unicorn/no-useless-promise-resolve-reject': ['warn'],
+    'unicorn/error-message': ['error'],
+    'unicorn/new-for-builtins': ['error'],
+
+    // Promise
+    'promise/no-new-statics': ['error'],
+    'promise/valid-params': ['error'],
+    'promise/param-names': ['warn'],
+
+    // Node
+    'node/no-new-require': ['error'],
+    'node/no-path-concat': ['error'],
   },
 };
 
