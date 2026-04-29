@@ -43,6 +43,7 @@ const common = {
     'typescript/no-unused-expressions': ['error'],
     'typescript/no-useless-constructor': ['error'],
     'typescript/array-type': ['error', {default: 'array-simple'}],
+    'typescript/consistent-type-imports': ['error'],
   },
 };
 
