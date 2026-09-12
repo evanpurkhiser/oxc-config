@@ -4,7 +4,7 @@
   "version": "0.14.0",
   "description": "Evan Purkhiser's personal Oxc configuration",
   "license": "MIT",
-  "author": "Evan Purkhiser",
+  "author": "Evan Purkhiser <oxc-config.js@evanpurkhiser.com>",
   "repository": "https://github.com/evanpurkhiser/oxc-config",
   "type": "module",
   "main": "src/oxlint.mjs",
