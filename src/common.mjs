@@ -90,6 +90,7 @@ const common = {
     'import/first': ['warn'],
 
     // Unicorn
+    'unicorn/no-await-expression-member': ['error'],
     'unicorn/prefer-node-protocol': ['error'],
     'unicorn/prefer-string-slice': ['warn'],
     'unicorn/no-useless-undefined': ['warn'],
