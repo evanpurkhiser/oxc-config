@@ -1,11 +1,10 @@
-## Evan Purkhiser's Personal Oxc config
+# Evan Purkhiser's Personal Oxc config
 
 [![publish](https://github.com/evanpurkhiser/oxc-config/workflows/publish/badge.svg)](https://github.com/evanpurkhiser/oxc-config/actions?query=workflow%3Apublish)
 [![NPM](https://img.shields.io/npm/v/@evanpurkhiser/oxc-config)](https://www.npmjs.com/package/@evanpurkhiser/oxc-config)
 
-These are my Oxc linting and formatting configurations that I use across my
-various personal
-projects.
+These are my Oxc linting and formatting configurations
+that I use across my various personal projects.
 
 ```bash
 npm install -D oxlint oxfmt @evanpurkhiser/oxc-config
@@ -22,8 +21,8 @@ export default defineConfig({
 });
 ```
 
-The default configuration is for React apps, but you can select from the
-following configurations:
+The default configuration is for React apps,
+but you can select from the following configurations:
 
 - `common` - ES6 and Typescript rules
 - `react` - React specific rules
