@@ -16,10 +16,11 @@
     "./oxfmt": "./src/oxfmt.mjs"
   },
   "scripts": {
-    "lint": "oxlint src oxlint.config.ts profiles/all/oxlint.config.ts",
+    "lint": "oxlint src test oxlint.config.ts profiles/all/oxlint.config.ts",
+    "test": "node --test",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "check": "pnpm run lint && pnpm run format:check"
+    "check": "pnpm run lint && pnpm test && pnpm run format:check"
   },
   "devDependencies": {
     "oxfmt": "^0.41.0",
