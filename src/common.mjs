@@ -1,3 +1,5 @@
+import {fileURLToPath} from 'node:url';
+
 const common = {
   plugins: [
     'eslint',
@@ -10,7 +12,16 @@ const common = {
     'node',
   ],
 
+  jsPlugins: [
+    {
+      name: 'oxc-config',
+      specifier: fileURLToPath(new URL('./oxlint/comments.mjs', import.meta.url)),
+    },
+  ],
+
   rules: {
+    'oxc-config/multiline-jsdoc': ['error'],
+
     // Best practices
     'array-callback-return': ['warn'],
     'consistent-return': ['warn'],
