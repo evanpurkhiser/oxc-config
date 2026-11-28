@@ -15,12 +15,13 @@ const common = {
   jsPlugins: [
     {
       name: 'oxc-config',
-      specifier: fileURLToPath(new URL('./oxlint/comments.mjs', import.meta.url)),
+      specifier: fileURLToPath(new URL('./oxlint/plugin.mjs', import.meta.url)),
     },
   ],
 
   rules: {
     'oxc-config/multiline-jsdoc': ['error'],
+    'oxc-config/no-parenthesized-method-receiver': ['error'],
 
     // Best practices
     'array-callback-return': ['warn'],
