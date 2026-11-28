@@ -80,6 +80,7 @@ const common = {
     'typescript/no-useless-constructor': ['error'],
     'typescript/array-type': ['error', {default: 'array-simple'}],
     'typescript/consistent-type-imports': ['error'],
+    'typescript/consistent-type-definitions': ['error', 'interface'],
     'typescript/no-import-type-side-effects': ['error'],
     'typescript/no-non-null-asserted-optional-chain': ['error'],
     'typescript/no-non-null-asserted-nullish-coalescing': ['error'],
